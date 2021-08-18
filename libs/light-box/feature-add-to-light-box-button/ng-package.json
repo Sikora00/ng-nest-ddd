@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../dist/libs/light-box/feature-add-to-lighbox-button",
+  "lib": {
+    "entryFile": "src/index.ts"
+  }
+}

@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "M2EwYTNhZGMtNmEzOC00MzgwLWJkNTItMDAzNjIyNWZlNDlmfHJlYWQtd3JpdGU="
       }
     }
@@ -39,14 +34,24 @@
     "api-interfaces": {
       "tags": []
     },
+    "catalog-domain": {
+      "tags": ["domain:catalog", "type:domain-logic"]
+    },
+    "catalog-feature-list": {
+      "tags": ["domain:catalog", "type:feature"]
+    },
+    "light-box-domain": {
+      "tags": ["domain:light-box", "type:domain-logic"]
+    },
+    "light-box-feature-add-to-light-box-button": {
+      "tags": ["domain:light-box", "type:feature"]
+    },
     "sales-app": {
       "tags": []
     },
     "sales-app-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "sales-app"
-      ]
+      "implicitDependencies": ["sales-app"]
     }
   }
 }

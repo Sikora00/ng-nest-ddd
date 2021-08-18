@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <img
+    mat-card-image
+    [src]="item.image"
+    alt="Photo of the masterpiece"
+  />
+  <mat-card-content>
+    <p>{{item.price}}$ <strong *ngIf="item.available">Unavailable</strong></p>
+  </mat-card-content>
+  <mat-card-actions>
+    <ng-content></ng-content>
+  </mat-card-actions>
+</mat-card>

@@ -15,7 +15,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sales-app/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@sales-app/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@sales-app/catalog/domain": ["libs/catalog/domain/src/index.ts"],
+      "@sales-app/catalog/feature-list": [
+        "libs/catalog/feature-list/src/index.ts"
+      ],
+      "@sales-app/light-box/domain": ["libs/light-box/domain/src/index.ts"],
+      "@sales-app/light-box/feature-add-to-light-box-button": [
+        "libs/light-box/feature-add-to-light-box-button/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
